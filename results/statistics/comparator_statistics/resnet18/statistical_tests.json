@@ -1,0 +1,14 @@
+{
+  "baseline": "resnet18",
+  "delong_auc_patheom": 0.9543387173212958,
+  "delong_auc_baseline": 0.9362279693602418,
+  "delong_auc_difference": 0.018110747961054052,
+  "delong_variance": 9.653330265088773e-07,
+  "delong_z": 18.433075603458192,
+  "delong_p_value": 7.131126570971678e-76,
+  "mcnemar_patheom_correct_baseline_wrong": 2457,
+  "mcnemar_patheom_wrong_baseline_correct": 1090,
+  "mcnemar_discordant_total": 3547,
+  "mcnemar_chi2_cc": 526.0659712433041,
+  "mcnemar_p_value": 2.0268615211398897e-116
+}

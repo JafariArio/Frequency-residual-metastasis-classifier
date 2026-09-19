@@ -1,0 +1,22 @@
+# Python 3.13.15
+#
+# Versions below were directly verified in the repository-packaging
+# environment. Packages without version pins were required by the public
+# scripts but their exact historical/package-environment versions were not
+# captured, so they are intentionally left unpinned.
+
+torch==2.14.0
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+h5py==3.16.0
+Pillow==12.3.0
+openpyxl==3.1.5
+
+# Required by public benchmark / analysis scripts
+torchvision
+timm
+matplotlib
+tqdm
+datasets

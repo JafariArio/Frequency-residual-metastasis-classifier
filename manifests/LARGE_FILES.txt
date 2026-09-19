@@ -1,0 +1,1 @@
+baselines/convnext_tiny/best_validation_balanced_accuracy.pt	106.20 MB

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.tmp
+*.log
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+runs/
+environment_freeze.txt

@@ -1,0 +1,29 @@
+{
+  "analysis_name": "Phase 10A final 11M PathEOM bootstrap confidence intervals",
+  "pred_csv": "predictions\\pcam\\test_predictions.csv",
+  "outdir": "results\\pcam\\bootstrap",
+  "n_rows": 32768,
+  "n_positive": 16377,
+  "n_negative": 16391,
+  "threshold_available_or_used": 0.22,
+  "n_bootstrap": 2000,
+  "bootstrap_mode": "stratified",
+  "seed": 20260517,
+  "ci_level": 0.95,
+  "ece_bins": 15,
+  "save_draws": true,
+  "write_xlsx": true,
+  "verify_final_model": true,
+  "verification_status": "PASS",
+  "input_warnings": [],
+  "elapsed_seconds": 145.18706345558167,
+  "output_files": {
+    "point_metrics_csv": "results\\pcam\\bootstrap\\pcam_test_point_metrics.csv",
+    "bootstrap_ci_csv": "results\\pcam\\bootstrap\\pcam_test_bootstrap_ci95.csv",
+    "bootstrap_draws_csv": "results\\pcam\\bootstrap\\pcam_test_bootstrap_draws.csv",
+    "verification_csv": "results\\pcam\\bootstrap\\final_model_metric_verification.csv",
+    "excel_workbook": "results\\pcam\\bootstrap\\pcam_test_bootstrap_ci95_workbook.xlsx"
+  },
+  "excel_write_success": true,
+  "excel_write_message": "Excel workbook written: results\\pcam\\bootstrap\\pcam_test_bootstrap_ci95_workbook.xlsx"
+}

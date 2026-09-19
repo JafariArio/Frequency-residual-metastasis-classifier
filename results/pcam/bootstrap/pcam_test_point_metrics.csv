@@ -1,0 +1,26 @@
+metric,metric_display,value
+roc_auc,ROC-AUC,0.954338717321296
+pr_auc_average_precision,PR-AUC / Average Precision,0.9600421857409934
+accuracy,Accuracy,0.88885498046875
+balanced_accuracy,Balanced accuracy,0.8888351416324152
+sensitivity_recall_positive,Sensitivity / Positive recall,0.8424009281309153
+specificity_recall_negative,Specificity / Negative recall,0.935269355133915
+positive_f1,Positive-class F1,0.8833962989050393
+weighted_precision,Weighted precision,0.8922267031198469
+weighted_recall,Weighted recall,0.88885498046875
+weighted_f1,Weighted F1,0.8886130938155858
+macro_f1,Macro F1,0.8886108659122014
+brier,Brier score,0.10202052090992542
+ece,ECE (15-bin unless changed),0.09503303815938736
+matthews_corrcoef,Matthews correlation coefficient,0.7810699414608782
+cohen_kappa,Cohen's kappa,0.7777011090783587
+nll_log_loss,NLL / Log loss,0.34428762744311076
+tp,tp,13796.0
+tn,tn,15330.0
+fp,fp,1061.0
+fn,fn,2581.0
+n_total,n_total,32768.0
+n_positive,n_positive,16377.0
+n_negative,n_negative,16391.0
+prevalence_positive,prevalence_positive,0.499786376953125
+predicted_positive_rate,predicted_positive_rate,0.453399658203125

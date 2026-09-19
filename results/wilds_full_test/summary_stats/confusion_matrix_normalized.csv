@@ -1,0 +1,6 @@
+normalization,actual_class,pred_negative,pred_positive
+by_actual_class,Negative,0.95870858513415,0.04129141486584993
+by_actual_class,Positive,0.01801208643920333,0.9819879135607966
+by_total,Negative,0.479354292567075,0.020645707432924966
+by_total,Positive,0.009006043219601665,0.4909939567803983
+

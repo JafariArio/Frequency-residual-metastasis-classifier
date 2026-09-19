@@ -1,0 +1,29 @@
+{
+  "phase": "Phase 11R FairFullBudget-style all-baseline rebuild",
+  "model": "deit_tiny",
+  "pcam_dir": "E:\\MetaPathNet\\MetaPathNet Data\\PCam",
+  "outdir": "baselines/deit_tiny",
+  "device": "cpu",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "seed": 2042,
+  "base_seed": 42,
+  "min_specificity": 0.91,
+  "threshold_step": 0.005,
+  "ece_bins": 15,
+  "grad_clip": 5.0,
+  "augment_train": true,
+  "checkpoint_selection": "best validation balanced accuracy at default threshold 0.5",
+  "posthoc_calibration": "validation temperature scaling",
+  "final_threshold_selection": "validation calibrated probabilities; maximize balanced accuracy subject to specificity >= min_specificity",
+  "training_from_scratch": true,
+  "parameter_count": 5493889,
+  "dataset_counts": {
+    "train": 262144,
+    "valid": 32768,
+    "test": 32768
+  }
+}

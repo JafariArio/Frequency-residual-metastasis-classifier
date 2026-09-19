@@ -1,0 +1,8 @@
+# Phase 11R package requirements
+numpy
+h5py
+scikit-learn
+torch
+torchvision
+timm
+openpyxl

@@ -1,0 +1,41 @@
+# Phase 12 paired bootstrap metric differences
+
+| baseline | metric | patheom_point | baseline_point | difference_patheom_minus_baseline | ci_lower | ci_upper | ci_excludes_zero |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| resnet18 | roc_auc | 0.9543 | 0.9362 | 0.0181 | 0.0161 | 0.0200 | True |
+| resnet18 | pr_auc | 0.9600 | 0.9390 | 0.0210 | 0.0190 | 0.0229 | True |
+| resnet18 | accuracy | 0.8889 | 0.8471 | 0.0417 | 0.0381 | 0.0453 | True |
+| resnet18 | balanced_accuracy | 0.8888 | 0.8471 | 0.0417 | 0.0381 | 0.0453 | True |
+| resnet18 | positive_f1 | 0.8834 | 0.8338 | 0.0496 | 0.0454 | 0.0536 | True |
+| resnet18 | weighted_f1 | 0.8886 | 0.8462 | 0.0425 | 0.0388 | 0.0461 | True |
+| resnet18 | sensitivity | 0.8424 | 0.7674 | 0.0750 | 0.0693 | 0.0809 | True |
+| resnet18 | specificity | 0.9353 | 0.9269 | 0.0084 | 0.0041 | 0.0128 | True |
+| resnet18 | mcc | 0.7811 | 0.7032 | 0.0778 | 0.0706 | 0.0850 | True |
+| efficientnet_b0 | roc_auc | 0.9543 | 0.9392 | 0.0151 | 0.0132 | 0.0171 | True |
+| efficientnet_b0 | pr_auc | 0.9600 | 0.9452 | 0.0148 | 0.0131 | 0.0166 | True |
+| efficientnet_b0 | accuracy | 0.8889 | 0.8622 | 0.0266 | 0.0233 | 0.0300 | True |
+| efficientnet_b0 | balanced_accuracy | 0.8888 | 0.8622 | 0.0266 | 0.0233 | 0.0300 | True |
+| efficientnet_b0 | positive_f1 | 0.8834 | 0.8532 | 0.0302 | 0.0264 | 0.0340 | True |
+| efficientnet_b0 | weighted_f1 | 0.8886 | 0.8617 | 0.0269 | 0.0235 | 0.0303 | True |
+| efficientnet_b0 | sensitivity | 0.8424 | 0.8011 | 0.0413 | 0.0360 | 0.0468 | True |
+| efficientnet_b0 | specificity | 0.9353 | 0.9233 | 0.0120 | 0.0080 | 0.0163 | True |
+| efficientnet_b0 | mcc | 0.7811 | 0.7299 | 0.0512 | 0.0446 | 0.0580 | True |
+| convnext_tiny | roc_auc | 0.9543 | 0.8995 | 0.0548 | 0.0518 | 0.0576 | True |
+| convnext_tiny | pr_auc | 0.9600 | 0.9001 | 0.0599 | 0.0568 | 0.0631 | True |
+| convnext_tiny | accuracy | 0.8889 | 0.7763 | 0.1125 | 0.1083 | 0.1168 | True |
+| convnext_tiny | balanced_accuracy | 0.8888 | 0.7762 | 0.1126 | 0.1083 | 0.1169 | True |
+| convnext_tiny | positive_f1 | 0.8834 | 0.7367 | 0.1467 | 0.1411 | 0.1521 | True |
+| convnext_tiny | weighted_f1 | 0.8886 | 0.7711 | 0.1175 | 0.1131 | 0.1219 | True |
+| convnext_tiny | sensitivity | 0.8424 | 0.6261 | 0.2163 | 0.2090 | 0.2232 | True |
+| convnext_tiny | specificity | 0.9353 | 0.9264 | 0.0088 | 0.0042 | 0.0134 | True |
+| convnext_tiny | mcc | 0.7811 | 0.5793 | 0.2018 | 0.1937 | 0.2102 | True |
+| deit_tiny | roc_auc | 0.9543 | 0.8826 | 0.0718 | 0.0684 | 0.0752 | True |
+| deit_tiny | pr_auc | 0.9600 | 0.8750 | 0.0850 | 0.0809 | 0.0891 | True |
+| deit_tiny | accuracy | 0.8889 | 0.7396 | 0.1492 | 0.1446 | 0.1541 | True |
+| deit_tiny | balanced_accuracy | 0.8888 | 0.7395 | 0.1493 | 0.1446 | 0.1542 | True |
+| deit_tiny | positive_f1 | 0.8834 | 0.6814 | 0.2020 | 0.1956 | 0.2086 | True |
+| deit_tiny | weighted_f1 | 0.8886 | 0.7307 | 0.1580 | 0.1530 | 0.1631 | True |
+| deit_tiny | sensitivity | 0.8424 | 0.5572 | 0.2852 | 0.2773 | 0.2933 | True |
+| deit_tiny | specificity | 0.9353 | 0.9219 | 0.0134 | 0.0084 | 0.0184 | True |
+| deit_tiny | mcc | 0.7811 | 0.5146 | 0.2665 | 0.2574 | 0.2759 | True |
+

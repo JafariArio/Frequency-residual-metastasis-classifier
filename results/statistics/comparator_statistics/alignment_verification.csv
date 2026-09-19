@@ -1,0 +1,6 @@
+baseline,n_aligned,n_positive,n_negative,index_alignment,label_alignment
+resnet18,32768,16377,16391,PASS,PASS
+efficientnet_b0,32768,16377,16391,PASS,PASS
+convnext_tiny,32768,16377,16391,PASS,PASS
+deit_tiny,32768,16377,16391,PASS,PASS
+

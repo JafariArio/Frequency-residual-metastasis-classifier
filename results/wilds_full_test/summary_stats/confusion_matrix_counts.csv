@@ -1,0 +1,5 @@
+actual_class,pred_negative,pred_positive,row_total
+Negative,40771,1756,42527
+Positive,766,41761,42527
+column_total,41537,43517,85054
+

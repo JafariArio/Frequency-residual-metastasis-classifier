@@ -1,0 +1,39 @@
+{
+  "baseline": "convnext_tiny",
+  "baseline_csv": "predictions\\baselines\\convnext_tiny\\predictions\\test_predictions.csv",
+  "n_aligned": 32768,
+  "n_positive": 16377,
+  "n_negative": 16391,
+  "patheom_point_metrics": {
+    "roc_auc": 0.954338717321296,
+    "pr_auc": 0.9600421857409934,
+    "accuracy": 0.88885498046875,
+    "balanced_accuracy": 0.8888351416324152,
+    "positive_f1": 0.8833962989050393,
+    "weighted_f1": 0.8886130938155858,
+    "sensitivity": 0.8424009281309153,
+    "specificity": 0.935269355133915,
+    "mcc": 0.7810699414608782,
+    "tp": 13796,
+    "tn": 15330,
+    "fp": 1061,
+    "fn": 2581
+  },
+  "baseline_point_metrics": {
+    "roc_auc": 0.8995046413530686,
+    "pr_auc": 0.9001454124780122,
+    "accuracy": 0.77630615234375,
+    "balanced_accuracy": 0.7762419880772286,
+    "positive_f1": 0.7366719356229343,
+    "weighted_f1": 0.7711358319768277,
+    "sensitivity": 0.6260609391219393,
+    "specificity": 0.9264230370325178,
+    "mcc": 0.579274874540967,
+    "tp": 10253,
+    "tn": 15185,
+    "fp": 1206,
+    "fn": 6124
+  },
+  "index_alignment": "PASS",
+  "label_alignment": "PASS"
+}

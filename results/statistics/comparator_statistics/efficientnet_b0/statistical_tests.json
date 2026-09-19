@@ -1,0 +1,14 @@
+{
+  "baseline": "efficientnet_b0",
+  "delong_auc_patheom": 0.9543387173212958,
+  "delong_auc_baseline": 0.9392297380501673,
+  "delong_auc_difference": 0.015108979271128531,
+  "delong_variance": 9.150981177072712e-07,
+  "delong_z": 15.794333149837717,
+  "delong_p_value": 3.4037357348366228e-56,
+  "mcnemar_patheom_correct_baseline_wrong": 2107,
+  "mcnemar_patheom_wrong_baseline_correct": 1234,
+  "mcnemar_discordant_total": 3341,
+  "mcnemar_chi2_cc": 227.5917390002993,
+  "mcnemar_p_value": 1.9978180388259182e-51
+}

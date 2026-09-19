@@ -1,0 +1,39 @@
+{
+  "baseline": "deit_tiny",
+  "baseline_csv": "predictions\\baselines\\deit_tiny\\predictions\\test_predictions.csv",
+  "n_aligned": 32768,
+  "n_positive": 16377,
+  "n_negative": 16391,
+  "patheom_point_metrics": {
+    "roc_auc": 0.954338717321296,
+    "pr_auc": 0.9600421857409934,
+    "accuracy": 0.88885498046875,
+    "balanced_accuracy": 0.8888351416324152,
+    "positive_f1": 0.8833962989050393,
+    "weighted_f1": 0.8886130938155858,
+    "sensitivity": 0.8424009281309153,
+    "specificity": 0.935269355133915,
+    "mcc": 0.7810699414608782,
+    "tp": 13796,
+    "tn": 15330,
+    "fp": 1061,
+    "fn": 2581
+  },
+  "baseline_point_metrics": {
+    "roc_auc": 0.882560013776424,
+    "pr_auc": 0.8750156735033137,
+    "accuracy": 0.7396240234375,
+    "balanced_accuracy": 0.7395461098766305,
+    "positive_f1": 0.6814278246583526,
+    "weighted_f1": 0.7306559762911649,
+    "sensitivity": 0.5571838554069732,
+    "specificity": 0.9219083643462876,
+    "mcc": 0.5145800486016451,
+    "tp": 9125,
+    "tn": 15111,
+    "fp": 1280,
+    "fn": 7252
+  },
+  "index_alignment": "PASS",
+  "label_alignment": "PASS"
+}

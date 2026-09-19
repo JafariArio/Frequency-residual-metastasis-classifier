@@ -1,0 +1,14 @@
+{
+  "baseline": "deit_tiny",
+  "delong_auc_patheom": 0.9543387173212958,
+  "delong_auc_baseline": 0.8825600137764242,
+  "delong_auc_difference": 0.07177870354487159,
+  "delong_variance": 3.0865564471548447e-06,
+  "delong_z": 40.85624959653015,
+  "delong_p_value": 0.0,
+  "mcnemar_patheom_correct_baseline_wrong": 6218,
+  "mcnemar_patheom_wrong_baseline_correct": 1328,
+  "mcnemar_discordant_total": 7546,
+  "mcnemar_chi2_cc": 3167.5485025178905,
+  "mcnemar_p_value": 0.0
+}

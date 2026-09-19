@@ -1,0 +1,31 @@
+{
+  "phase": "Phase 13D final 11M PathEOM CAMELYON17-WILDS transfer evaluation",
+  "status": "COMPLETED",
+  "scientific_boundary": "Out-of-source patch-level transfer stress test only; not whole-slide inference, not clinical validation, and no external threshold tuning.",
+  "device": "cpu",
+  "variant": "p7_r2_sens_reg_11m",
+  "threshold": 0.22,
+  "n_predictions": 85054,
+  "elapsed_seconds": 2821.296105861664,
+  "input_paths": {
+    "subset_dir": "data\\raw\\wilds_full_test",
+    "x_h5": "data\\raw\\wilds_full_test\\camelyon17_wilds_full_test_x.h5",
+    "y_h5": "data\\raw\\wilds_full_test\\camelyon17_wilds_full_test_y.h5",
+    "metadata_csv": "data\\raw\\wilds_full_test\\camelyon17_wilds_full_test_metadata.csv",
+    "train_script": "src\\model\\train_final_model.py",
+    "checkpoint": "checkpoints\\final_model\\best_validation_constraint.pt"
+  },
+  "output_paths": {
+    "outdir": "results\\wilds_full_test",
+    "pred_dir": "results\\wilds_full_test\\predictions",
+    "stats_dir": "results\\wilds_full_test\\summary_stats",
+    "figs_dir": "results\\wilds_full_test\\figures"
+  },
+  "model_load_info": {
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "metrics_json": "results\\wilds_full_test\\summary_stats\\performance_summary.json",
+  "bootstrap_ci_csv": "results\\wilds_full_test\\summary_stats\\bootstrap_95ci.csv",
+  "predictions_csv": "predictions\\wilds_full_test\\test_predictions.csv"
+}

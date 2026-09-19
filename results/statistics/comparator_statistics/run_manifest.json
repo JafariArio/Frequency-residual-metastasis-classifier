@@ -1,0 +1,44 @@
+{
+  "analysis": "Paired statistics for final model versus standardized baselines",
+  "start_time": "2026-05-19 16:28:05",
+  "args": {
+    "patheom_csv": "predictions\\pcam\\test_predictions.csv",
+    "baseline_predictions_root": "predictions\\baselines",
+    "outdir": "results\\statistics\\comparator_statistics",
+    "baselines": [
+      "resnet18",
+      "efficientnet_b0",
+      "convnext_tiny",
+      "deit_tiny"
+    ],
+    "baseline_csv": [],
+    "patheom_prob_col": "probability",
+    "baseline_prob_col": "probability_calibrated",
+    "pred_col": "pred_selected",
+    "label_col": "y_true",
+    "index_col": "index",
+    "n_bootstrap": 2000,
+    "ci_level": 0.95,
+    "seed": 20260519,
+    "save_draws": true,
+    "skip_missing": false,
+    "progress_every": 100
+  },
+  "patheom_csv": "predictions\\pcam\\test_predictions.csv",
+  "processed_baselines": [
+    "resnet18",
+    "efficientnet_b0",
+    "convnext_tiny",
+    "deit_tiny"
+  ],
+  "missing_baselines": [],
+  "failed_baselines": [],
+  "end_time": "2026-05-19 16:37:28",
+  "outputs": {
+    "paired_metric_differences_csv": "results\\statistics\\comparator_statistics\\all_paired_metric_differences.csv",
+    "statistical_tests_csv": "results\\statistics\\comparator_statistics\\all_statistical_tests.csv",
+    "alignment_verification_csv": "results\\statistics\\comparator_statistics\\alignment_verification.csv",
+    "paired_metric_differences_md": "results\\statistics\\comparator_statistics\\all_paired_metric_differences.md",
+    "statistical_tests_md": "results\\statistics\\comparator_statistics\\all_statistical_tests.md"
+  }
+}
