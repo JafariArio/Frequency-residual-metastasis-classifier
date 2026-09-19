@@ -1,5 +1,5 @@
 {
-  "phase": "Center-1 OOD-validation analysis true CAMELYON17-WILDS OOD validation center-1 correction",
+  "phase": "CAMELYON17-WILDS Center-1 OOD-validation analysis",
   "status": "COMPLETED",
   "ood_center": 1,
   "n_center1_predictions": 34904,
@@ -36,5 +36,3 @@
   "bootstrap_ci_csv": "results\\center1_ood_validation\\summary_stats\\bootstrap_95ci.csv",
   "scientific_boundary": "This package corrects the combined Hugging Face validation mirror into the official WILDS OOD validation hospital center only."
 }
-
-
