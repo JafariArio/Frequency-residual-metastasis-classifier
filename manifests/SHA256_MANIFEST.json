@@ -246,8 +246,8 @@
   },
   {
     "path": "manifests/PORTABILITY_REPORT.txt",
-    "size_bytes": 1025,
-    "sha256": "1ae37d7ecc8cfbea8f90fc7e6c4704842f54501fa6e0273a9d993417ea540d5d"
+    "size_bytes": 160,
+    "sha256": "d16e65223c441acc39abfbff6a7382bda7e15f073c9778c4a5e14a64ad2bf26b"
   },
   {
     "path": "predictions/baselines/convnext_tiny/test_predictions.csv",
@@ -326,8 +326,8 @@
   },
   {
     "path": "results/center1_ood_validation/center1_ood_validation_manifest.json",
-    "size_bytes": 1308,
-    "sha256": "2a0dc2c0b8c0b6ecb35c16ca5c0cc67db879d0fa6328f692b9ad767fc6731881"
+    "size_bytes": 1310,
+    "sha256": "562c0f5905e3151986f2f02c8009ce3303fa0f8f63d3db38785948fd42361634"
   },
   {
     "path": "results/center1_ood_validation/summary_stats/bootstrap_95ci.csv",
@@ -526,8 +526,8 @@
   },
   {
     "path": "results/wilds_full_test/summary_stats/performance_summary.csv",
-    "size_bytes": 989,
-    "sha256": "69336c6d8b0d3f309d0bea2321d19e8b24437e9f21fe245f1f10279dbb77827f"
+    "size_bytes": 991,
+    "sha256": "f6afd584d176bbcb68ddd3c8642851ec4e747145a874a90d270f02ef26690a11"
   },
   {
     "path": "results/wilds_full_test/summary_stats/performance_summary.json",
