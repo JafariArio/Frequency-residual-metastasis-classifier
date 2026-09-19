@@ -1,16 +1,44 @@
-# Reproducibility notes
+# Reproducibility
 
-The final reported model is the archived 10.96M implementation copied to
-`src/model/train_final_model.py`.
+This repository contains the implementation and analysis files corresponding to
+the revised manuscript. Earlier developmental components that were not used to
+produce the final reported results are not part of the reproducibility workflow
+listed below.
 
-Do not mix it with an earlier public implementation containing a multiscale tokenizer,
-scale fusion, quality head, or different frequency/loss formulation unless such files are
-explicitly marked as legacy and not used for the reported results.
+## Result-code provenance
 
-After verifying this generated repository:
-1. initialize Git,
-2. configure Git LFS,
-3. commit,
-4. push,
-5. record the new commit hash in the reviewer response.
+Code commit recorded when this reproducibility package was prepared:
 
+`5bef38a58bec9a2913c137e39d3948b315fe9b56`
+
+Expected manuscript-result commit prefix:
+
+`5bef38a`
+
+If these identifiers differ, verify the provenance before stating that the
+expected commit generated the reported results.
+
+## Reproducibility artifacts
+
+| Purpose | Repository file | SHA-256 |
+|---|---|---|
+
+
+The machine-readable provenance table is available at
+`reproducibility/RESULT_PROVENANCE.csv` and the checksum manifest at
+`reproducibility/SHA256SUMS.csv`.
+
+## Recommended verification
+
+1. Confirm that the checkpoint and canonical prediction files are the exact
+   artifacts used for the manuscript results.
+2. Confirm that the configuration corresponds to the frozen final model.
+3. Run the DeLong and paired-bootstrap scripts from the canonical prediction files.
+4. Run the CAMELYON17-WILDS inference pipeline with the frozen checkpoint.
+5. Run SmoothGrad with the same frozen checkpoint and preprocessing pipeline.
+
+## Development-code note
+
+The repository previously contained experimental/developmental components.
+Only the files identified in this document and the provenance table should be
+used to reproduce the revised manuscript results.

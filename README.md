@@ -35,3 +35,10 @@ Use:
 Large raw benchmark archives are intentionally excluded.
 
 
+<!-- METAPATHNET_REPRODUCIBILITY -->
+## Reproducibility
+
+The exact checkpoint, prediction files, configurations, external-inference
+pipeline, statistical-analysis scripts, and SHA-256 provenance information for
+the revised manuscript are documented in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md).
