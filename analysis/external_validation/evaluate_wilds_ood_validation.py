@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 r"""
-Phase 17B — Frozen final 11M PathEOM-Net-R transfer evaluation on the
-CAMELYON17-WILDS OOD validation split created in Phase 17A.
+OOD-validation analysis — Frozen final 11M PathEOM-Net-R transfer evaluation on the
+CAMELYON17-WILDS OOD validation split created in OOD-validation preparation.
 
 Scientific role
 ---------------
@@ -162,7 +162,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--subset-dir",
         default=str(Path(__file__).resolve().parents[2] / "data" / "raw" / "wilds_ood_validation"),
-        help="Phase 17A OOD-validation directory containing x/y HDF5 and metadata CSV.",
+        help="OOD-validation preparation OOD-validation directory containing x/y HDF5 and metadata CSV.",
     )
     parser.add_argument(
         "--x-h5",
@@ -792,7 +792,7 @@ def main() -> int:
 
     elapsed = time.time() - start_time
     manifest = {
-        "phase": "Phase 17B final 11M PathEOM CAMELYON17-WILDS OOD validation transfer evaluation",
+        "phase": "OOD-validation analysis final 11M PathEOM CAMELYON17-WILDS OOD validation transfer evaluation",
         "status": "COMPLETED",
         "scientific_boundary": (
             "Second held-out CAMELYON17-WILDS patch-level transfer check only; not whole-slide inference, "
@@ -814,7 +814,7 @@ def main() -> int:
     write_json(out_paths["outdir"] / "wilds_ood_validation_evaluation_manifest.json", manifest)
 
     reader.close()
-    status("Phase 17B OOD validation transfer evaluation completed.")
+    status("OOD-validation analysis OOD validation transfer evaluation completed.")
     print(json.dumps(jsonable(manifest), indent=2), flush=True)
     return 0
 
@@ -825,4 +825,5 @@ if __name__ == "__main__":
     except Exception as exc:
         print(f"[ERROR] {type(exc).__name__}: {exc}", flush=True)
         raise
+
 

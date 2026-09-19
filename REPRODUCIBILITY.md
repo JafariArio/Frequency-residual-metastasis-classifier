@@ -13,3 +13,4 @@ After verifying this generated repository:
 3. commit,
 4. push,
 5. record the new commit hash in the reviewer response.
+

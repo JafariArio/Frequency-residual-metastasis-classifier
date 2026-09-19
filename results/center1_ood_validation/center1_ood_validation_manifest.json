@@ -1,10 +1,10 @@
 {
-  "phase": "Phase 17C true CAMELYON17-WILDS OOD validation center-1 correction",
+  "phase": "Center-1 OOD-validation analysis true CAMELYON17-WILDS OOD validation center-1 correction",
   "status": "COMPLETED",
   "ood_center": 1,
   "n_center1_predictions": 34904,
   "paths": {
-    "phase17b_dir": "results\\wilds_ood_validation",
+    "ood_validation_dir": "results\\wilds_ood_validation",
     "predictions_csv": "results\\wilds_ood_validation\\predictions\\validation_predictions.csv",
     "outdir": "results\\center1_ood_validation"
   },
@@ -36,3 +36,4 @@
   "bootstrap_ci_csv": "results\\center1_ood_validation\\summary_stats\\bootstrap_95ci.csv",
   "scientific_boundary": "This package corrects the combined Hugging Face validation mirror into the official WILDS OOD validation hospital center only."
 }
+

@@ -216,3 +216,4 @@ def compute_mean_std(dataset: PCamH5Dataset, max_items: int = 2048) -> Tuple[np.
     mean = sums / count
     std = np.sqrt(np.maximum(sq_sums / count - np.square(mean), 0.0))
     return mean, std
+

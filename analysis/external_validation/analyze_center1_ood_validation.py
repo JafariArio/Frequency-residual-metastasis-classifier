@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 r"""
-Phase 17C — Extract the true CAMELYON17-WILDS OOD validation center from the
-Phase 17B prediction export and compute manuscript-ready metrics.
+Center-1 OOD-validation analysis — Extract the true CAMELYON17-WILDS OOD validation center from the
+OOD-validation analysis prediction export and compute manuscript-ready metrics.
 
 Why this correction exists
 --------------------------
@@ -9,10 +9,10 @@ The Hugging Face mirror's `validation` split contains:
 - center 1: the official WILDS Validation (OOD) hospital,
 - centers 0, 3, 4: source-domain validation content.
 
-Phase 17B evaluated the full mirrored validation split. That aggregate is valid,
+OOD-validation analysis evaluated the full mirrored validation split. That aggregate is valid,
 but it should not be described as a pure OOD-validation result.
 
-Phase 17C filters the already-generated Phase 17B predictions to:
+Center-1 OOD-validation analysis filters the already-generated OOD-validation analysis predictions to:
   center == 1
 
 and computes:
@@ -128,12 +128,12 @@ def write_csv(path: Path, rows: Sequence[Dict[str, Any]], fields: Optional[Seque
 
 def parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser(
-        description="Phase 17C: extract true OOD validation center=1 metrics from Phase 17B predictions."
+        description="Center-1 OOD-validation analysis: extract true OOD validation center=1 metrics from OOD-validation analysis predictions."
     )
     ap.add_argument(
         "--ood-validation-dir",
         default=str(Path(__file__).resolve().parents[2] / "results" / "wilds_ood_validation"),
-        help="Phase 17B output folder containing the prediction CSV.",
+        help="OOD-validation analysis output folder containing the prediction CSV.",
     )
     ap.add_argument(
         "--predictions-csv",
@@ -163,7 +163,7 @@ def resolve_paths(args: argparse.Namespace) -> Dict[str, Path]:
         else ood_validation_dir / "predictions" / "validation_predictions.csv"
     )
     if not pred.exists():
-        raise FileNotFoundError(f"Phase 17B prediction CSV not found: {pred}")
+        raise FileNotFoundError(f"OOD-validation analysis prediction CSV not found: {pred}")
     outdir = Path(args.outdir)
     return {"ood_validation_dir": ood_validation_dir, "predictions_csv": pred, "outdir": outdir}
 
@@ -410,12 +410,12 @@ def main() -> int:
     paths = resolve_paths(args)
     dirs = prepare_outdir(paths["outdir"], args.overwrite)
 
-    status("Loading Phase 17B prediction export.")
+    status("Loading OOD-validation analysis prediction export.")
     df = pd.read_csv(paths["predictions_csv"])
     required = ["subset_index", "y_true", "probability", "pred_selected", "category", "center"]
     missing = [c for c in required if c not in df.columns]
     if missing:
-        raise ValueError(f"Phase 17B predictions missing required columns: {missing}")
+        raise ValueError(f"OOD-validation analysis predictions missing required columns: {missing}")
     df["center"] = df["center"].astype(int)
     center_counts = df.groupby("center").size().reset_index(name="count")
     center_counts.to_csv(dirs["stats_dir"] / "validation_center_counts.csv", index=False)
@@ -486,7 +486,7 @@ def main() -> int:
     )
 
     manifest = {
-        "phase": "Phase 17C true CAMELYON17-WILDS OOD validation center-1 correction",
+        "phase": "Center-1 OOD-validation analysis true CAMELYON17-WILDS OOD validation center-1 correction",
         "status": "COMPLETED",
         "ood_center": int(args.ood_center),
         "n_center1_predictions": int(len(ood)),
@@ -501,7 +501,7 @@ def main() -> int:
         ),
     }
     write_json(dirs["outdir"] / "center1_ood_validation_manifest.json", manifest)
-    status("Phase 17C completed.")
+    status("Center-1 OOD-validation analysis completed.")
     print(json.dumps(jsonable(manifest), indent=2), flush=True)
     return 0
 
@@ -512,4 +512,5 @@ if __name__ == "__main__":
     except Exception as exc:
         print(f"[ERROR] {type(exc).__name__}: {exc}", flush=True)
         raise
+
 

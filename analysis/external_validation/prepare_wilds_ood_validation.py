@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 r"""
-Phase 17A — Stream and save the CAMELYON17-WILDS OOD validation split.
+OOD-validation preparation — Stream and save the CAMELYON17-WILDS OOD validation split.
 
 Purpose
 -------
@@ -392,7 +392,7 @@ def main() -> int:
 
     except Exception as exc:
         failure = {
-            "phase": "Phase 17A CAMELYON17-WILDS OOD validation split download",
+            "phase": "OOD-validation preparation CAMELYON17-WILDS OOD validation split download",
             "status": "FAILED",
             "error_type": type(exc).__name__,
             "error_message": str(exc),
@@ -424,7 +424,7 @@ def main() -> int:
 
     elapsed_sec = time.time() - start_time
     manifest = {
-        "phase": "Phase 17A CAMELYON17-WILDS streamed OOD validation split",
+        "phase": "OOD-validation preparation CAMELYON17-WILDS streamed OOD validation split",
         "status": "COMPLETED",
         "dataset": DATASET_NAME,
         "split": SPLIT_NAME,
@@ -459,4 +459,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
